@@ -1,11 +1,12 @@
 import time
 
-# https://projecteuler.net/problem=45
-# Triangular, pentagonal, and hexagonal
+# https://projecteuler.net/problem=
+# 
 
 def Main():
+result = 0
 
-    return ("🙁")
+    return result
 
 
 
