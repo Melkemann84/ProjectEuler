@@ -29,5 +29,5 @@ answer = main()
 
 print("--- %s seconds ---" % (time.time() - start_time))
 print("----------------------------------")
-print("result: " + str(answer))
+print("Answer: " + str(answer))
 print("----------------------------------")
