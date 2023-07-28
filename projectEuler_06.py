@@ -31,14 +31,16 @@ def main():
     result = squareOfSum(100) - sumOfSquares(100) 
     return result
 
-def present(answer):
+def showMe(answer,start_time): #returns answer in clipboard and calculates time used
     print("----------------------------------")
     print("The answer: " + str(answer)+" has been copied to your clipboard!")
+    print("--- %s seconds ---" % (time.time() - start_time))
+    print("----------------------------------")
     pyperclip.copy(str(answer))
     spam = pyperclip.paste()
-    
+
 start_time = time.time()
 answer = main()
-present(answer)
-print("Time used: %s seconds ---" % (time.time() - start_time))
-print("----------------------------------")
+showMe(answer,start_time)
+#print("Time used: %s seconds ---" % (time.time() - start_time))
+#print("----------------------------------")
