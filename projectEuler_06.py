@@ -34,11 +34,11 @@ def main():
 def present(answer):
     print("----------------------------------")
     print("The answer: " + str(answer)+" has been copied to your clipboard!")
-    print("Time used: %s seconds ---" % (time.time() - start_time))
-    print("----------------------------------")
     pyperclip.copy(str(answer))
     spam = pyperclip.paste()
     
 start_time = time.time()
 answer = main()
 present(answer)
+print("Time used: %s seconds ---" % (time.time() - start_time))
+print("----------------------------------")
