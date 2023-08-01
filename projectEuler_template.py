@@ -11,8 +11,8 @@ def main():
 
 def showMe(answer,start_time): #returns answer in clipboard and calculates time used
     print("----------------------------------")
-    print("The answer: " + str(answer)+" has been copied to your clipboard!")
-    print("--- %s seconds ---" % (time.time() - start_time))
+    print(f"The answer: {answer} has been copied to your clipboard!")
+    print(f"--- {time.time() - start_time} seconds ---")
     print("----------------------------------")
     pyperclip.copy(str(answer))
     spam = pyperclip.paste()
