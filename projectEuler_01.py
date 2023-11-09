@@ -4,15 +4,15 @@ start_time = time.time()
 # https://projecteuler.net/problem=1
 # Multiples of 3 and 5
 
-def multiple(num):
+def multiple(num): #checks if num is multiple of 3 or 5. Returns num if true
     if num%3==0 or num%5==0:
         return num
     return 0
 
 def Main():
-    result = 0
-    for n in range(1,1000):
-        result = result + multiple(n)
+    result = 0                          #initiates result
+    for n in range(1,1000):             
+        result = result + multiple(n)   #ads n if n is multiple of 3 or 5.
     return result
 
 
