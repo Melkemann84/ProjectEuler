@@ -18,7 +18,7 @@ def isPrime(num): # Returns True if prime, False if not
         return False
 
 def main(upper_limit):
-    list_of_primes = [0]
+    list_of_primes = [0]                        #
     for i in range(upper_limit):
         if i % 1000 == 0:
             print(f"We are currently at {i}")
