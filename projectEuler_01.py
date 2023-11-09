@@ -11,7 +11,7 @@ def multiple(num): #checks if num is multiple of 3 or 5. Returns num if true
 
 def Main():
     result = 0                          #initiates result
-    for n in range(1,1000):             
+    for n in range(1,1000):             #checks the range
         result = result + multiple(n)   #ads n if n is multiple of 3 or 5.
     return result
 
